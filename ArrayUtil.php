@@ -11,6 +11,11 @@ namespace Camilo3rd\Util;
 
 class ArrayUtil
 {
+
+    /**
+     * @param $array_data
+     * @return array|mixed|string
+     */
     public static function cleanse($array_data) {
         if (is_array($array_data)) {
             foreach($array_data as $i => $array_item) {
@@ -29,7 +34,7 @@ class ArrayUtil
      * @param array $allowedTags
      * @return mixed|string
      */
-    static function cleanse_string($string, $allowedTags = array('<br>','<b>','<i>','<p>','<span>','<strong>'))
+    public static function cleanse_string($string, $allowedTags = array('<br>','<b>','<i>','<p>','<span>','<strong>'))
     {
         if (get_magic_quotes_gpc()) {
             $string = stripslashes($string);
