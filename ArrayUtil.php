@@ -6,7 +6,7 @@
  * Time: 11:44 AM
  */
 
-namespace AlphaOne\Util;
+namespace Camilo3rd\Util;
 
 
 class ArrayUtil
